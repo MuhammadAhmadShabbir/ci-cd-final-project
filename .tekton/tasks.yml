@@ -4,7 +4,7 @@ metadata:
   name: cleanup
 spec:
   workspaces:
-    - name: output
+    - name: source
   steps:
     - name: remove
       image: alpine:3
@@ -38,7 +38,7 @@ metadata:
   name: nose
 spec:
   workspaces:
-    - name: output
+    - name: source
   params:
     - name: args
       description: Arguments to pass to nose
